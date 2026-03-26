@@ -1,5 +1,5 @@
 export default function CloudHosting(){
     return (
-        CloudHosting
+        <p>cloud page</p>
     )
 }

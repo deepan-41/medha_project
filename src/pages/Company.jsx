@@ -1,5 +1,5 @@
 export default function Company(){
     return (
-        Company
+        <p>company page</p>
     )
 }
