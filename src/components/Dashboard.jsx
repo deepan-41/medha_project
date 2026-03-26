@@ -1,10 +1,62 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+
 import serverData from "../assets/data-server.png";
 import mail from "../assets/message.png"
 import cloud from "../assets/cloud.png"
 import user from "../assets/user.png"
 import time from "../assets/time.png"
+
+const RMMCard = () => {
+  return (
+    <Link to="/white-label-msp-services">
+        <div className="group relative w-full max-w-sm overflow-hidden rounded-xl border border-gray-800   transition-all duration-300 hover:border-gray-600 hover:shadow-2xl">
+      
+        <div className='bg-black p-6'>
+          <div className="flex items-center justify-between mb-2">
+          <h3 className="text-sm font-bold text-gray-200">
+            RMM and PSA Dashboard
+          </h3>
+          <span className="flex items-center gap-1.5 rounded-full bg-green-500/10 px-2 py-1 text-xs font-bold text-green-500">
+            image
+          </span>
+        </div>
+        <div className=" border-t  text-gray-500 "></div>
+
+          <div className="space-y-4 text-white transition-all duration-300 font-light text-xs mt-4">
+            <div className='flex'>
+              <span>EndPoints Health</span>
+              <span className='text-green-500'>847/850</span>
+            </div>
+            <div className='flex'>
+              <span>Patch compilance</span>
+              <span className='text-blue-700'>98.2%</span>
+            </div>
+            <div className='flex'>
+              <span>Open Tickets</span>
+              <span className='text-amber-300'>23 active</span>
+            </div>
+          </div>
+
+          <div className="mt-7 flex justify-between border-t  pt-2 text-xs  text-gray-500 mb-2" >
+            <span>Logged in:ouregineer@yourbrand.com</span>
+            <span className="text-green-500">24/7</span>
+          </div>
+        </div>
+
+        <div className='bg-white p-5'>
+          <div className='flex items-center gap-3'>
+              <img src={user} alt="cloud" className='h-4 w-4' />
+              <span>White label MSP</span>
+          </div>
+          <p>You can't afford 6 more techs.We'll be your 24/7 team. Your clients never Know.</p>
+        </div>
+  
+      </div>
+    </Link>
+    
+  );
+};
 
 const MigrationCard = () => {
   return (
@@ -65,62 +117,15 @@ const MigrationCard = () => {
   );
 };
 
-const RMMCard = () => {
-  return (
-    <Link to="/white-label-msp-services">
-        <div className="group relative w-full max-w-sm overflow-hidden rounded-xl border border-gray-800   transition-all duration-300 hover:border-gray-600 hover:shadow-2xl">
-      
-        <div className='bg-black p-6'>
-          <div className="flex items-center justify-between mb-2">
-          <h3 className="text-sm font-bold text-gray-200">RMM and PSA Dashboard</h3>
-          <span className="flex items-center gap-1.5 rounded-full bg-green-500/10 px-2 py-1 text-xs font-bold text-green-500">
-            image
-          </span>
-        </div>
-        <div className=" border-t  text-gray-500 "></div>
-
-          <div className="space-y-4 text-white transition-all duration-300 font-light text-xs mt-4">
-            <div className='flex'>
-              <span>EndPoints Health</span>
-              <span className='text-green-500'>847/850</span>
-            </div>
-            <div className='flex'>
-              <span>Patch compilance</span>
-              <span className='text-blue-700'>98.2%</span>
-            </div>
-            <div className='flex'>
-              <span>Open Tickets</span>
-              <span className='text-amber-300'>23 active</span>
-            </div>
-          </div>
-
-          <div className="mt-7 flex justify-between border-t  pt-2 text-xs  text-gray-500 mb-2" >
-            <span>Logged in:ouregineer@yourbrand.com</span>
-            <span className="text-green-500">24/7</span>
-          </div>
-        </div>
-
-        <div className='bg-white p-5'>
-          <div className='flex items-center gap-3'>
-              <img src={user} alt="cloud" className='h-4 w-4' />
-              <span>White label MSP</span>
-          </div>
-          <p>You can't afford 6 more techs.We'll be your 24/7 team. Your clients never Know.</p>
-        </div>
-  
-      </div>
-    </Link>
-    
-  );
-};
-
 const LiveSupportCard = () => {
   return (
     <Link to="/professional-services">
       <div className="group relative w-full max-w-sm overflow-hidden rounded-xl border border-gray-800   transition-all duration-300 hover:border-gray-600 hover:shadow-2xl">
         <div className='bg-black p-6'>
           <div className="flex items-center justify-between mb-2">
-          <h3 className="text-sm font-bold text-gray-200">Live Support Queue</h3>
+          <h3 className="text-sm font-bold text-gray-200">
+            Live Support Queue
+          </h3>
           <span className="flex items-center gap-1.5 rounded-full bg-green-500/10 px-2 py-1 text-xs font-bold text-green-500">
             15m avg response
           </span>
@@ -132,7 +137,9 @@ const LiveSupportCard = () => {
               <span className='text-red-500'>CRITICAL</span>
               <span>2m ago</span>
             </div>
-            <p className='text-xs text-white'>SQL Server down - 150 users affected</p>
+            <p className='text-xs text-white'>
+              SQL Server down - 150 users affected
+            </p>
             <div className='text-xs'>
               <img  src={time} alt="time" className='h-3 w-3'/>
               <span className='text-green-500'>Engineer assigned</span>
