@@ -99,7 +99,7 @@ export default function Home(){
                             Helpdesk, monitoring and patching. Under your logo. Blled to you.
                         </p>
 
-                        <Link to="/white-label-msp-services/partner-program"
+                        <Link to="/white-label-msp-services/managed-it-services"
                         className="flex text-blue-900 items-center opacity-0 group-hover:opacity-100 transition duration-300"  >
                             Learn more 
                             <img src={rightArrow} alt="arrow" className='h-5 w-5' />
@@ -115,7 +115,7 @@ export default function Home(){
                             We watch clients' networks 24/7. Threats get stopped. You get the credit.
                         </p>
 
-                        <Link to="/white-label-msp-services/partner-program"
+                        <Link to="/white-label-msp-services/noc-soc-cloud"
                         className="flex text-blue-900 items-center opacity-0 group-hover:opacity-100 transition duration-300"  >
                             Learn more 
                             <img src={rightArrow} alt="arrow" className='h-5 w-5' />
@@ -131,7 +131,7 @@ export default function Home(){
                             Need a Windows admn for 10 hours? Hire ours. Imvoice your client. We handle payroll.
                         </p>
 
-                        <Link to="/white-label-msp-services/partner-program"
+                        <Link to="/white-label-msp-services/staff-augmentation"
                         className="flex text-blue-900 items-center opacity-0 group-hover:opacity-100 transition duration-300"  >
                             Learn more 
                             <img src={rightArrow} alt="arrow" className='h-5 w-5' />
