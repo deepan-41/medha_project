@@ -1,5 +1,3 @@
-import Footer from "../components/Footer";
-
 export default function WhiteLabel(){
     return (
         <>
@@ -51,8 +49,6 @@ export default function WhiteLabel(){
                     </div>
                 </div>
             </section>
-
-            <Footer />
         </>
     )
 }

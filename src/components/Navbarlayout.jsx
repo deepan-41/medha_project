@@ -1,9 +1,15 @@
+import ScrollToTop from "../utility/ScrollToTop";
+
 import companyLogo from "../assets/medha_cloud.svg";
 import { Link, Outlet } from "react-router-dom";
+import Footer from "./Footer";
+
+
 
 export default function NavbarLayout() {
    return(
-    <>
+    <>  
+        <ScrollToTop />
         <div className="flex items-center justify-between px-1 py-2 shadow-md bg-white sticky top-0">
             <Link to= "/">
                 <img src={companyLogo} alt="MEDHA CLOUD"  className="h-12"/>
@@ -29,6 +35,7 @@ export default function NavbarLayout() {
         </div>
 
         <Outlet/>
+        <Footer />
     </>
    ) 
 } 

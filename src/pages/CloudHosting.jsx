@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import Footer from "../components/Footer";
 
 import shield from "../assets/encrypted.png";
 import rightArrow from "../assets/rightarrow.png";
@@ -222,8 +221,6 @@ export default function CloudHosting(){
                     </button>
                 </div>
             </section>
-
-            <Footer />
         </>
     )
 }

@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import {MigrationCard, RMMCard, LiveSupportCard} from "../components/Dashboard";
-import Footer from "../components/Footer";
 
 import squareChat from "../assets/conversation.png";
 import rightArrow from "../assets/rightarrow.png";
@@ -63,47 +62,7 @@ export default function Home(){
                 </div>
             </section>
 
-            <section className="flex flex-col bg-gray-200 items-center py-30">
-                <p className="text-sm mb-5">Trusted by 1,200+ businesses worldwide</p>
-                <h1 className="font-bold text-5xl w-135 justify-center">
-                    Talk to Engineers Who Fix Your IT Problems
-                </h1>
-                <h1 className="text-xl w-160 m-20">
-                    No sales scripts. Just certified engineers who fix server crashes, failed migrations, and compliance issues every day.
-                </h1>
-                <div className="flex gap-3">
-                    <button className="px-8 py-3 rounded-md text-white bg-orange-400 hover:bg-orange-500 flex items-center justify-center gap-2 mb-2">
-                        Talk to Our Team
-                    </button> 
-                    <button className="px-8 py-3 rounded-md text-black border-2 border-gray-300 hover:text-orange-400 bg-white flex items-center justify-center gap-2 mb-2">
-                        Start Live Chat
-                    </button>
-                </div>
-                    <div className="flex  items-center justify-center text-center gap-40 mt-10">
-                        <div className="flex flex-col">
-                            <p className="font-bold text-4xl">24Hrs</p>
-                            <p className="text-sm text-gray-400"> Setup Time</p>
-                        </div>
-                        <div className="flex flex-col">
-                            <p className="font-bold text-4xl">99.99%</p>
-                            <p className="text-sm text-gray-400"> Uptime SLA</p>
-                        </div>
-                        <div className="flex flex-col">
-                            <p className="font-bold text-4xl">15min</p>
-                            <p className="text-sm text-gray-400">Response Time</p>
-                        </div>
-                    </div>
-                    <div className=" border-t  bg-white  w-8/12 m-10"></div>
-                    <p className="text-sm text-gray-500">Or reach us directly</p>
-                    <div className="flex gap-10 mt-5">
-                        <a href="tel:+16467752855">+16467752855(US)</a>
-                        <a href="tel:+919353644646">+919353644646(India)</a>
-                        <a href="mailto:sales@medhacloud.com">sales@medhacloud.com</a>
-                        <span></span>
-                    </div>
-            </section>
-
-            <section className="flex flex-col bg-gray-200 px-10 py-30">
+            <section className="flex flex-col bg-gray-50 px-10 py-30">
                 <p className="text-blue-900 text-sm font-semibold">For MSP Partners</p>
                 <h1 className="font-bold text-4xl my-5">White Label MSP Services</h1>
                 <h1 className="text-xl text-gray-500 w-9/13">
@@ -180,7 +139,46 @@ export default function Home(){
                     </div>
                 </div>
             </section>
-            <Footer />
+
+            <section className="flex flex-col bg-gray-100 items-center py-30">
+                <p className="text-sm mb-5">Trusted by 1,200+ businesses worldwide</p>
+                <h1 className="font-bold text-5xl w-135 justify-center">
+                    Talk to Engineers Who Fix Your IT Problems
+                </h1>
+                <h1 className="text-xl w-160 m-20">
+                    No sales scripts. Just certified engineers who fix server crashes, failed migrations, and compliance issues every day.
+                </h1>
+                <div className="flex gap-3">
+                    <button className="px-8 py-3 rounded-md text-white bg-orange-400 hover:bg-orange-500 flex items-center justify-center gap-2 mb-2">
+                        Talk to Our Team
+                    </button> 
+                    <button className="px-8 py-3 rounded-md text-black border-2 border-gray-300 hover:text-orange-400 bg-white flex items-center justify-center gap-2 mb-2">
+                        Start Live Chat
+                    </button>
+                </div>
+                    <div className="flex  items-center justify-center text-center gap-40 mt-10">
+                        <div className="flex flex-col">
+                            <p className="font-bold text-4xl">24Hrs</p>
+                            <p className="text-sm text-gray-400"> Setup Time</p>
+                        </div>
+                        <div className="flex flex-col">
+                            <p className="font-bold text-4xl">99.99%</p>
+                            <p className="text-sm text-gray-400"> Uptime SLA</p>
+                        </div>
+                        <div className="flex flex-col">
+                            <p className="font-bold text-4xl">15min</p>
+                            <p className="text-sm text-gray-400">Response Time</p>
+                        </div>
+                    </div>
+                    <div className=" border-t  bg-white  w-8/12 m-10"></div>
+                    <p className="text-sm text-gray-500">Or reach us directly</p>
+                    <div className="flex gap-10 mt-5">
+                        <a href="tel:+16467752855">+16467752855(US)</a>
+                        <a href="tel:+919353644646">+919353644646(India)</a>
+                        <a href="mailto:sales@medhacloud.com">sales@medhacloud.com</a>
+                        <span></span>
+                    </div>
+            </section>
         </>
     )
 }
