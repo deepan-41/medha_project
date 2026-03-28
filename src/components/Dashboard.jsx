@@ -10,7 +10,7 @@ import time from "../assets/time.png"
 const RMMCard = () => {
   return (
     <Link to="/white-label-msp-services">
-        <div className="group relative w-full max-w-sm overflow-hidden rounded-xl border border-gray-800   transition-all duration-300 hover:border-gray-600 hover:shadow-2xl">
+        <div className="group relative w-full max-w-sm overflow-hidden -z-1 rounded-xl border border-gray-800   transition-all duration-300 hover:border-gray-600 hover:shadow-2xl">
       
         <div className='bg-black p-6'>
           <div className="flex items-center justify-between mb-2">
@@ -61,7 +61,7 @@ const RMMCard = () => {
 const MigrationCard = () => {
   return (
     <Link to="/cloud-hosting">
-      <div className="group relative w-full max-w-sm overflow-hidden rounded-xl border border-gray-800   transition-all duration-300 hover:border-gray-600 hover:shadow-2xl">
+      <div className="group relative w-full max-w-sm overflow-hidden rounded-xl -z-1 border border-gray-800   transition-all duration-300 hover:border-gray-600 hover:shadow-2xl">
         <div className='bg-black p-6'>
           <div className="flex items-center justify-between mb-2">
           <h3 className="text-sm font-bold text-gray-200">Migration Dashboard</h3>
@@ -120,7 +120,7 @@ const MigrationCard = () => {
 const LiveSupportCard = () => {
   return (
     <Link to="/professional-services">
-      <div className="group relative w-full max-w-sm overflow-hidden rounded-xl border border-gray-800   transition-all duration-300 hover:border-gray-600 hover:shadow-2xl">
+      <div className="group relative w-full max-w-sm overflow-hidden rounded-xl -z-1 border border-gray-800   transition-all duration-300 hover:border-gray-600 hover:shadow-2xl">
         <div className='bg-black p-6'>
           <div className="flex items-center justify-between mb-2">
           <h3 className="text-sm font-bold text-gray-200">

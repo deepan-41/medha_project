@@ -12,7 +12,7 @@ import PartnerProgram from './pages/whitelabel_subpages/PartnerProgram';
 import ManagedItServices from './pages/whitelabel_subpages/ManagedITServices';
 import NocSocCloud from './pages/whitelabel_subpages/NocSoc';
 import StaffAugmentation from './pages/whitelabel_subpages/StaffAugmentation';
-
+import HostingSolutions from './pages/cloud_subpages/HostingSolutions';
 const router = createBrowserRouter(
   createRoutesFromElements(
     
@@ -24,10 +24,15 @@ const router = createBrowserRouter(
       <Route path='company' element={<Company />} />
 
       {/* sub route nothing common with parent route */}
+
+      {/* White label Routes */}
       <Route path='white-label-msp-services/partner-program' element={<PartnerProgram />} />
       <Route path='white-label-msp-services/managed-it-services' element={<ManagedItServices/>} />
       <Route path='white-label-msp-services/noc-soc-cloud' element={<NocSocCloud />} />
       <Route path='white-label-msp-services/staff-augmentation' element={<StaffAugmentation/>} />
+
+      {/* Cloud routes */}
+      <Route path='cloud-hosting/hosting-solutions' element={<HostingSolutions/>} />
       
     </Route>  
   )
