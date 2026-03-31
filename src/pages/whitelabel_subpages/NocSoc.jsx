@@ -20,6 +20,7 @@ export default function NocSocCloud(){
                     </button>
                 </div>
             </section>
+            
             <section className="px-20 pt-30 pb-20 flex flex-col items-center justify-center bg-white">
                 <h1 className="text-4xl font-bold">
                     NOC as a Service — White Label for MSPs

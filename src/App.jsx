@@ -13,9 +13,12 @@ import ManagedItServices from './pages/whitelabel_subpages/ManagedITServices';
 import NocSocCloud from './pages/whitelabel_subpages/NocSoc';
 import StaffAugmentation from './pages/whitelabel_subpages/StaffAugmentation';
 import HostingSolutions from './pages/cloud_subpages/HostingSolutions';
+import SpecialtySolutions from './pages/cloud_subpages/SpecialtySolutions';
+import Microsoft from './pages/cloud_subpages/Microsoft';
+
+
 const router = createBrowserRouter(
   createRoutesFromElements(
-    
     <Route path='/' element={<NavbarLayout />}>
       <Route index element={<Home />} />
       <Route path='white-label-msp-services' element={<WhiteLabel />} />      
@@ -33,7 +36,9 @@ const router = createBrowserRouter(
 
       {/* Cloud routes */}
       <Route path='cloud-hosting/hosting-solutions' element={<HostingSolutions/>} />
-      
+      <Route path='cloud-hosting/specialty-hosting' element={<SpecialtySolutions />} />
+      <Route path='cloud-hosting/microsoft' element={<Microsoft />} />
+      <Route path='cloud-hosting/security-compliance' element={<SpecialtySolutions />} />
     </Route>  
   )
 )
@@ -46,5 +51,6 @@ function App() {
     </>
   )
 }
+
 
 export default App

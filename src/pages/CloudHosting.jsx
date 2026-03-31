@@ -119,7 +119,7 @@ export default function CloudHosting(){
                             <img src={tick} alt="tick" className="h-4 w-4" />
                             <span>HIPAA and PCI-DSS compliant cloud Hosting</span>
                         </div>
-                        <Link to="/cloud-hosting/hosting-solutions"
+                        <Link to='/cloud-hosting/specialty-hosting'
                         className="flex text-orange-300 items-center mt-5">
                             Learn more 
                             <img src={rightArrow} alt="arrow" className='h-5 w-5' />
@@ -150,7 +150,7 @@ export default function CloudHosting(){
                             <img src={tick} alt="tick" className="h-4 w-4" />
                             <span>Microsoft licensing support</span>
                         </div>
-                        <Link to="/cloud-hosting/hosting-solutions"
+                        <Link to="/cloud-hosting/microsoft"
                         className="flex text-orange-300 items-center mt-5">
                             Learn more 
                             <img src={rightArrow} alt="arrow" className='h-5 w-5' />
