@@ -15,6 +15,8 @@ import StaffAugmentation from './pages/whitelabel_subpages/StaffAugmentation';
 import HostingSolutions from './pages/cloud_subpages/HostingSolutions';
 import SpecialtySolutions from './pages/cloud_subpages/SpecialtySolutions';
 import Microsoft from './pages/cloud_subpages/Microsoft';
+import ServerSupport from './pages/professionalservices_subpages/ServerSupport';
+import Calculator from './utility/ROI_Calculator';
 
 
 const router = createBrowserRouter(
@@ -39,6 +41,9 @@ const router = createBrowserRouter(
       <Route path='cloud-hosting/specialty-hosting' element={<SpecialtySolutions />} />
       <Route path='cloud-hosting/microsoft' element={<Microsoft />} />
       <Route path='cloud-hosting/security-compliance' element={<SpecialtySolutions />} />
+
+      {/* professional services routes */}
+      <Route path='professional-services/server-support' element={<ServerSupport/>} />
     </Route>  
   )
 )
@@ -46,8 +51,9 @@ const router = createBrowserRouter(
 function App() {
   return (
     <>
-      <Numberbar />
+      <Numberbar /> 
       <RouterProvider router={router} />
+      {/* < Calculator /> */}
     </>
   )
 }

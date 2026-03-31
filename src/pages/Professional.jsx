@@ -93,9 +93,9 @@ export default function Professional(){
                             <img src={tick} alt="tick" className="h-4 w-4" />
                             <Link>Microsoft IIS Srver Support</Link>
                         </div>
-                        <Link to="/cloud-hosting/hosting-solutions"
+                        <Link to="/professional-services/server-support"
                         className="flex text-green-600 items-center border-gray-300  border-t p-3 mt-5">
-                            View All Services 
+                            View All Services
                             <img src={rightArrow} alt="arrow" className='h-5 w-5' />
                         </Link>
                     </div>
