@@ -16,7 +16,8 @@ import HostingSolutions from './pages/cloud_subpages/HostingSolutions';
 import SpecialtySolutions from './pages/cloud_subpages/SpecialtySolutions';
 import Microsoft from './pages/cloud_subpages/Microsoft';
 import ServerSupport from './pages/professionalservices_subpages/ServerSupport';
-import Calculator from './utility/ROI_Calculator';
+import Blog from './pages/blog';
+import MicroSoftBlog from './pages/blog/microsoft';
 
 
 const router = createBrowserRouter(
@@ -27,6 +28,8 @@ const router = createBrowserRouter(
       <Route path='cloud-hosting' element={<CloudHosting />} />
       <Route path='professional-services' element={<Professional />} />
       <Route path='company' element={<Company />} />
+      <Route path='blog' element={<Blog/>} />
+
 
       {/* sub route nothing common with parent route */}
 
@@ -44,6 +47,9 @@ const router = createBrowserRouter(
 
       {/* professional services routes */}
       <Route path='professional-services/server-support' element={<ServerSupport/>} />
+
+      {/* blog sub routes */}
+      <Route path='blog/microsoft-365' element={<MicroSoftBlog/>} />
     </Route>  
   )
 )
@@ -53,10 +59,8 @@ function App() {
     <>
       <Numberbar /> 
       <RouterProvider router={router} />
-      {/* < Calculator /> */}
     </>
   )
 }
-
 
 export default App

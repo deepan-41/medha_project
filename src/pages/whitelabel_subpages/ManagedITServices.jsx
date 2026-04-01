@@ -1,10 +1,5 @@
-import rightArrow from "../../assets/rightarrow.png";
 import badge from "../../assets/medal.png"
-import tick from "../../assets/checkmark.png"
-import call from "../../assets/call.png"
-import time from "../../assets/time.png"
-import location from "../../assets/navigation.png"
-
+import Calculator from "../../components/ROI_Calculator";
 export default function ManagedItServices(){
     return (
         <>
@@ -85,6 +80,7 @@ export default function ManagedItServices(){
                                 </div>
                             </div>
             </section>
+            <Calculator />
         </>
     )
 }
