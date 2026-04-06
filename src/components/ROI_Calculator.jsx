@@ -208,6 +208,7 @@ const EngineerROI = () => {
                     <label className="text-sm font-semibold">Level 1 Engineers (Helpdesk)</label>
                     <input 
                         type="number"
+                        min="0"
                         value= {levelOne}
                         onChange={(e) => {
                             useLevelOne(Number(e.target.value))
@@ -219,6 +220,7 @@ const EngineerROI = () => {
                     <label className="text-sm font-semibold">Level 2 Engineers (Advanced)</label>
                     <input 
                         type="number"
+                        min="0"
                         value= {levelTwo}
                         onChange={(e) => 
                             useLevelTwo(Number(e.target.value))
@@ -230,6 +232,7 @@ const EngineerROI = () => {
                     <label className="text-sm font-semibold">Level 3 / NOC Engineers</label>
                     <input 
                         type="number"
+                        min="0"
                         value= {levelThree}
                         onChange={(e) => 
                             useLevelThree(Number(e.target.value))

@@ -16,19 +16,19 @@ export default function NavbarLayout() {
             </Link>
             <div className="flex gap-8 text-gray-700 font-medium">
                 <Link to="white-label-msp-services"
-                    className="hover:text-blue-600 transition">
+                    className="hidden hover:text-blue-600 transition sm:block">
                     White Label MSP Services
                 </Link>
                 <Link to= "cloud-hosting"
-                className="hover:text-blue-600 transition">
+                className="hidden hover:text-blue-600 transition sm:block">
                     Cloud
                 </Link>
                 <Link to= "professional-services"
-                className="hover:text-blue-600 transition">
+                className="hidden hover:text-blue-600 transition sm:block">
                     Professional Services
                 </Link>
                 <Link to= "company"
-                className="hover:text-blue-600 transition">
+                className="hidden hover:text-blue-600 transition sm:block">
                     Company
                 </Link>
             </div>

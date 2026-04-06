@@ -1,4 +1,4 @@
-import React from 'react';
+import {Link} from "react-router-dom";
 import { Mail, Phone, ShieldCheck, Server, Globe, FileText} from 'lucide-react';
 
 const Footer = () => {
@@ -93,7 +93,11 @@ const Footer = () => {
             <ul className="space-y-2">
               <li>About Us</li>
               <li>Careers</li>
-              <li>Blog</li>
+              <li>
+                <Link to="/blog">
+                  Blog
+                </Link>
+              </li>
               <li>Contact</li>
             </ul>
           </div>

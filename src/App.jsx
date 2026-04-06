@@ -18,6 +18,7 @@ import Microsoft from './pages/cloud_subpages/Microsoft';
 import ServerSupport from './pages/professionalservices_subpages/ServerSupport';
 import Blog from './pages/blog';
 import MicroSoftBlog from './pages/blog/microsoft';
+import CategoryPage from './pages/blog/BlogCategory';
 
 
 const router = createBrowserRouter(
@@ -50,6 +51,7 @@ const router = createBrowserRouter(
 
       {/* blog sub routes */}
       <Route path='blog/microsoft-365' element={<MicroSoftBlog/>} />
+      <Route path="blog/microsoft-365/:slug" element={<CategoryPage />} />
     </Route>  
   )
 )

@@ -1,6 +1,18 @@
 import  {Link } from "react-router-dom"
+import rightArrow from "../../assets/rightarrow.png"
 
 export default function MicroSoftBlog(){
+    const microsoftBlog = [
+        {
+            id: "microsoft-365-statistics-2026",
+            title: "Microsoft 365 Statistics 2026: Market Share, Adoption & Pricing Data",
+            desc: "Comprehensive Micosoft 365 statistis for 2026: 446M paid seats, market share vs Google workspace, enterprise adopation rates, prcing tiers, SaaS spending trends, and revenue data.",
+            date : "Mar 14 2026",
+            read : 14,
+            author: "Medha Cloud",
+            slug : "statistics-2026"
+        }
+    ]
     return(
         <>
             <section className="bg-orange-500 px-10 py-20 text-white">
@@ -54,8 +66,28 @@ export default function MicroSoftBlog(){
                         or read our comprehensive Microsoft 365 Licensing Guide — a 14-chapter deep dive into every plan,
                         add-on, and pricing tier available in 2026.
                     </p>
+                </div> 
+            </section>
+            <section className="p-10">
+                <div className="flex flex-col gap-5">
+                    {microsoftBlog.map(blog => 
+                        <Link to={`/blog/microsoft-365/${blog.slug}`}>
+                            <div className="group p-3.5 shadow-2xl border border-gray-400 rounded-2xl hover:border-blue-700 lg:w-8/12">
+                                <div className="flex gap-8">
+                                    <span>{blog.date}</span>
+                                    <span>{blog.read} min read</span>
+                                    <span>{blog.author}</span>
+                                </div>
+                                <h1 className="font-bold text-lg group-hover:text-blue-700">{blog.title}</h1>
+                                <p className="my-3">{blog.desc}</p>
+                                <div className="flex items-center align-middle gap-2 text-blue-700">
+                                    Read Article
+                                    <img src={rightArrow}  alt="arrow" className="h5 w-5" />
+                                </div>
+                            </div>
+                        </Link>
+                    )}
                 </div>
-                
             </section>
         </>
     )
