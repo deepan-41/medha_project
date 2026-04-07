@@ -9,6 +9,21 @@ export default function Blog(){
             desc: "Master Microsoft 365 -- from licensing and plan selection to exchange Online administration and Teams depolyment. Guides from certified Microsoft...", 
             subDesc:"Microsoft 365 Plans & Pricing", 
             headerCol: "bg-orange-500"},
+
+            {id : "managed-it-services", 
+            title: "Managed IT Services", 
+            articlesNum :65, 
+            desc: "Discover enterprise-grade managed IT solutions, help desk best practices, and expert insights from certified professionals managing 10,000+ endpoints globally.", 
+            subDesc:"IT Services", 
+            headerCol: "bg-blue-800"
+            },
+            {id : "", 
+            title: "Google Cloud & Workspace", 
+            articlesNum :58, 
+            desc: "Master Google Workspace and Google Cloud Platform — admin guides, security configuration, and pricing insights from certified Google Cloud professionals.", 
+            subDesc:"Google Cloud Services", 
+            headerCol: "bg-gray-400"
+            }
     ]
     return(
         <>
@@ -33,7 +48,7 @@ export default function Blog(){
             <section className="px-10 py-15">
                 <h1 className=" text-3xl font-bold flex justify-center">Browse by Category</h1>
                 <p className="text-lg flex justify-center">Explore our service-aligned blog categories — each one connected to expert services and solutions.</p>
-                <div className="flex gap-3 my-10">
+                <div className="flex gap-5 my-10">
                     {blogsSection.map(blog => 
                     <div className="text-white shadow-2xl  rounded-2xl hover:border border-black  lg:w-3/13">
                         <div className={`${blog.headerCol} p-3.5 rounded-t-2xl`}>

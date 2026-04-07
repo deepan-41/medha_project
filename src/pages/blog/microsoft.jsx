@@ -11,6 +11,15 @@ export default function MicroSoftBlog(){
             read : 14,
             author: "Medha Cloud",
             slug : "statistics-2026"
+        },
+        {
+            id: "microsoft-365-cost-optimization-guide",
+            title: "Microsoft 365 Cost Optimization: How to Cut Your Licensing Spend by 30% Without Losing Features",
+            desc: "Most organizations overspend on Microsoft 365 by 25-40%. This guide reveals 15 proven strategies to right-size license",
+            date : "Mar 13 2026",
+            read : 22,
+            author: "Medha Cloud",
+            slug : "cost-optimization-guide"
         }
     ]
     return(
