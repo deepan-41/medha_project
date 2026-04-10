@@ -2,15 +2,15 @@ export default function WhiteLabel(){
     return (
         <>
             <section className="flex flex-col items-center justify-center text-center p-30" >
-                <h1 className="font-bold text-5xl">
+                <h1 className="font-bold text-4xl w-90 sm:w-full sm:text-5xl">
                     White Label Managed Services for MSPs
                 </h1>
-                <h1 className="text-xl mt-5 mb-8 text-gray-800 w-150">
+                <p className="text-xl font-semibold mt-5 mb-8 text-gray-600 w-90 sm:max-w-3xl text-center">
                     White label MSP services — we answer tickets, monitor servers, and handle incidents under your brand.
                      Our MSP helpdesk, MSP NOC services, and service desk outsourcing let you scale without hiring.
-                </h1>
+                </p>
 
-                <div className="flex gap-3">
+                <div className="flex flex-col sm:flex-row gap-3">
                     <button className="px-8 py-3 rounded-md text-white bg-blue-900 hover:bg-blue-500 flex items-center justify-center gap-2 mb-2">
                         Start Free Trial
                     </button> 
@@ -21,14 +21,14 @@ export default function WhiteLabel(){
             </section>
 
             <section className="flex flex-col items-center justify-center text-center bg-gray-100 pt-25 pb-20">
-                <h1 className="font-bold text-4xl w-full">
+                <h2 className="font-bold text-3xl w-90 sm:w-full sm:text-3xl">
                     Outsourced NOC, SOC & Helpdesk — Trusted by MSPs Worldwide
-                </h1>
-                <h1 className="text-xl mt-5 mb-8 text-gray-800 w-190">
+                </h2>
+                <p className="text-xl mt-5 mb-8 text-gray-800 w-90 sm:max-w-3xl sm:text-lg">
                     MSPs worldwide use our managed NOC and 24/7 NOC services from Bangalore—5X cheaper than onshore, invisible to their clients
-                </h1>
+                </p>
 
-                <div className="flex  items-center justify-center text-center gap-40 mt-10">
+                <div className="grid grid-cols-2 sm:flex  items-center justify-center text-center gap-40 mt-10">
                     <div className="flex flex-col">
                         <p className="font-bold text-4xl">32</p>
                         <p className="text-sm text-gray-400">

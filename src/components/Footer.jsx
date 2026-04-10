@@ -1,6 +1,6 @@
 import {Link} from "react-router-dom";
 import { Mail, Phone, ShieldCheck, Server, Globe, FileText} from 'lucide-react';
-
+import companyLogo from "../assets/medha_cloud.svg";
 const Footer = () => {
   return (
     <footer className="bg-[#0b0f1a] text-gray-300 py-12 px-6 font-sans">
@@ -9,9 +9,10 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
 
           <div className="bg-[#161b26] p-8 rounded-lg border border-gray-800">
-            <h2 className="text-white font-bold text-xl mb-4 flex items-center gap-2">
-              <span className="text-blue-500 font-serif">M</span> MEDHA CLOUD
-            </h2>
+            <div className="text-white font-bold text-xl mb-4 flex items-center gap-2">
+              <img src={companyLogo} alt="Medha Cloud" className="h-5 w-5" />
+              <span>MEDHA CLOUD</span> 
+            </div>
             <p className="text-sm leading-relaxed">
               White-label MSP services for partners. Scale your business without hiring.
             </p>

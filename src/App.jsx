@@ -2,7 +2,7 @@ import { Route, Link, createBrowserRouter, createRoutesFromElements, RouterProvi
 
 import './App.css'
 import Numberbar from './components/Numberbar'
-import NavbarLayout from './components/Navbarlayout'
+import Layout from './components/Layout'
 import Home from './pages/Home'
 import WhiteLabel from './pages/WhiteLabel'
 import CloudHosting from './pages/CloudHosting'
@@ -23,7 +23,7 @@ import CategoryPage from './pages/blog/BlogCategory';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path='/' element={<NavbarLayout />}>
+    <Route path='/' element={<Layout />}>
       <Route index element={<Home />} />
       <Route path='white-label-msp-services' element={<WhiteLabel />} />      
       <Route path='cloud-hosting' element={<CloudHosting />} />

@@ -13,31 +13,33 @@ export default function Home(){
     return (
         <>
             <section className="flex flex-col items-center justify-center text-center mt-30 ">
-                <h3 className="font-bold text-5xl">White Label MSP, Cloud Hosting</h3> 
-                <h3 className="font-bold text-5xl text-blue-800">& 24/7 Server Support</h3>
-                <h1 className="text-xl mt-5 mb-8 text-gray-800 w-150">
+                <h1 className="text-4xl md:text-5xl font-bold mb-5 leading-tight">
+                    White Label MSP, Cloud Hosting
+                    <span className="block bg-clip-text  mt-2 text-blue-800">& 24/7 Server Support</span>
+                </h1> 
+                <p className="text-2xl  mb-8 text-gray-500 max-w-2xl">
                         Can't afford 6 more techs? Server crashed? Migration failed? We answer in 15 minutes.
-                </h1>
+                </p>
 
                 <button className="px-8 py-3 rounded-md text-white bg-orange-400 flex items-center justify-center gap-2 mb-2">
                     <img src={squareChat} alt="chat" className="h-4 w-4"/>
                     <span> Chat with us</span>
                     <img src={rightArrow} alt="arrow" className="h-4 w-4"/>
                 </button>
-                <p className="text-sm text-gray-400">Usually responds in under 2 minutes</p>
+                <p className="text-base text-gray-400">Usually responds in under 2 minutes</p>
             </section>
             
             <section  className="pt-15 pb-25">
-                <div className="flex  px-10  pb-20 gap-5">
+                <div className="sm:flex gap-5  px-10  pb-20">
                     <RMMCard />
                     <MigrationCard />
                     <LiveSupportCard />
                 </div>
                 <div className="flex flex-col  items-center">
-                    <h1 className="text-xl">
+                    <p className="text-base">
                         9 years in business fixing IT problems for MSPs, hospitals, banks, manufacturers and many industries
-                    </h1>
-                    <div className="flex  items-center justify-center text-center gap-40 mt-10">
+                    </p>
+                    <div className="grid grid-cols-2 sm:flex  items-center justify-center text-center gap-10 sm:gap-40 mt-10">
                         <div className="flex flex-col">
                             <p className="font-bold text-4xl">9+</p>
                             <p className="text-sm text-gray-400"> years in business</p>
@@ -64,10 +66,10 @@ export default function Home(){
 
             <section className="flex flex-col bg-gray-50 px-10 py-30">
                 <p className="text-blue-900 text-sm font-semibold">For MSP Partners</p>
-                <h1 className="font-bold text-4xl my-5">White Label MSP Services</h1>
-                <h1 className="text-xl text-gray-500 w-9/13">
+                <h2 className="font-bold text-4xl my-5">White Label MSP Services</h2>
+                <p className="text-xl text-gray-500 max-w-9/13">
                     Stop losing clients to bigger MSPs. Add 24/7 NOC/SOC coverage in 4 weeks — your logo, your pricing, our certified team.
-                </h1>
+                </p>
                 <Link to="/white-label-msp-services" 
                 className="flex text-blue-900 items-center my-5">
                     Learn more 
@@ -75,10 +77,10 @@ export default function Home(){
                 </Link>
 
                 {/* collection of box div */}
-                <div className="flex gap-5">
+                <div className="sm:flex gap-5">
                     <div className="group border-2 border-gray-300 py-5 pl-7 pr-13 rounded-2xl w-min transition-all duration-300 hover:border-gray-600 hover:shadow-2xl">
                         <img src={badge} alt="badge" className='h-5 w-5 mb-3'/>
-                        <h1 className="text-xl w-max">Getting Started</h1>
+                        <h3 className="text-xl w-max">Getting Started</h3>
                         <p className="text-sm  text-gray-600 w-50 my-3">
                             Pricing takes 5 minutes. Onboarding takes 2 weeks. No contracts.
                         </p>
@@ -92,9 +94,9 @@ export default function Home(){
 
                     <div className="group border-2 border-gray-300 py-5 pl-7 pr-13 rounded-2xl w-min transition-all duration-300 hover:border-gray-600 hover:shadow-2xl">
                         <img src= {speaker} alt="speaker" className='h-5 w-5 mb-3'/>
-                        <h1 className="text-xl w-max">
+                        <h3 className="text-xl w-max">
                             Managed IT Services
-                        </h1>
+                        </h3>
                         <p className="text-sm  text-gray-600 w-50 my-3">
                             Helpdesk, monitoring and patching. Under your logo. Blled to you.
                         </p>
@@ -108,9 +110,9 @@ export default function Home(){
 
                     <div className="group border-2 border-gray-300 py-5 pl-7 pr-13 rounded-2xl w-min transition-all duration-300 hover:border-gray-600 hover:shadow-2xl">
                         <img src={shield} alt="shield" className='h-5 w-5 mb-3'/>
-                        <h1 className="text-xl w-max">
+                        <h3 className="text-xl w-max">
                             NOC & SOC Services
-                        </h1>
+                        </h3>
                         <p className="text-sm  text-gray-600 w-50 my-3">
                             We watch clients' networks 24/7. Threats get stopped. You get the credit.
                         </p>
@@ -124,9 +126,9 @@ export default function Home(){
 
                     <div className="group border-2 border-gray-300 py-5 pl-7 pr-13 rounded-2xl w-min transition-all duration-300 hover:border-gray-600 hover:shadow-2xl">
                         <img src={user} alt="user" className='h-5 w-5 mb-3'/>
-                        <h1 className="text-xl w-max"
+                        <h3 className="text-xl w-max"
                         >Staff Augmention
-                        </h1>
+                        </h3>
                         <p className="text-sm  text-gray-600 w-50 my-3">
                             Need a Windows admn for 10 hours? Hire ours. Imvoice your client. We handle payroll.
                         </p>
@@ -140,12 +142,12 @@ export default function Home(){
                 </div>
             </section>
 
-            <section className="flex flex-col bg-gray-100 items-center py-30">
+            <section className="flex flex-col bg-gray-100 items-center text-center py-30">
                 <p className="text-sm mb-5">Trusted by 1,200+ businesses worldwide</p>
-                <h1 className="font-bold text-5xl w-135 justify-center">
+                <h2 className="text-4xl md:text-5xl font-bold text-gray-900 leading-12 text-center max-w-xl mb-6">
                     Talk to Engineers Who Fix Your IT Problems
-                </h1>
-                <h1 className="text-xl w-160 m-20">
+                </h2>
+                <h1 className="text-lg text-gray-600 max-w-2xl mx-auto mb-12">
                     No sales scripts. Just certified engineers who fix server crashes, failed migrations, and compliance issues every day.
                 </h1>
                 <div className="flex gap-3">
@@ -156,7 +158,7 @@ export default function Home(){
                         Start Live Chat
                     </button>
                 </div>
-                    <div className="flex  items-center justify-center text-center gap-40 mt-10">
+                    <div className="sm:flex  items-center justify-center text-center gap-40 mt-10">
                         <div className="flex flex-col">
                             <p className="font-bold text-4xl">24Hrs</p>
                             <p className="text-sm text-gray-400"> Setup Time</p>
@@ -172,7 +174,7 @@ export default function Home(){
                     </div>
                     <div className=" border-t  bg-white  w-8/12 m-10"></div>
                     <p className="text-sm text-gray-500">Or reach us directly</p>
-                    <div className="flex gap-10 mt-5">
+                    <div className="flex flex-col md:flex-row gap-10 mt-5">
                         <a href="tel:+16467752855">+16467752855(US)</a>
                         <a href="tel:+919353644646">+919353644646(India)</a>
                         <a href="mailto:sales@medhacloud.com">sales@medhacloud.com</a>
